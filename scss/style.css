@@ -1,0 +1,136 @@
+/* Reset */
+body {
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul, ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  font-size: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: unset;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Custom select */
+.custom-select {
+  width: 400px;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+.custom-select .dropdown {
+  position: relative;
+}
+.custom-select .dropdown .button-container {
+  position: relative;
+}
+.custom-select .dropdown .button-container .dropdown-button {
+  position: relative;
+  display: block;
+  text-align: left;
+  background-color: whitesmoke;
+  border: unset;
+  width: 400px;
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 20px;
+}
+.custom-select .dropdown .button-container .icon {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.custom-select .dropdown .button-container .icon.active svg {
+  transform: rotateX(-180deg);
+}
+.custom-select .dropdown .button-container .icon.active svg path {
+  fill: #1758FF;
+}
+.custom-select .dropdown .dropdown-list {
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  z-index: 9;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: 10px 0;
+  overflow: hidden;
+  display: none;
+}
+.custom-select .dropdown .dropdown-list .dropdown-item {
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.custom-select .dropdown .dropdown-list .dropdown-item.active {
+  background-color: #2196F3;
+  color: white;
+}
+.custom-select .dropdown .dropdown-list .dropdown-item:hover {
+  background-color: white;
+}
+.custom-select .dropdown .dropdown-list.dropdown-list-visible {
+  display: block;
+}
+.custom-select .dropdown .dropdown-input-hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
